@@ -1,0 +1,7 @@
+[package]
+name = "syrusakbary/netlify-demo"
+version = "0.1.0"
+description = ""
+
+[dependencies]
+"_/pngquant" = "0.1.0"

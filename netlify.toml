@@ -1,3 +1,3 @@
 [build]
 publish = "dist"
-command = "wasmer -V && wasmer self-update && wapm install pngquant && wapm run pngquant dist/Ducati_side_shadow.png"
+command = "wasmer self-update && wapm install && wapm run pngquant dist/Ducati_side_shadow.png"
