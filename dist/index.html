@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<meta charset=UTF-8>
+<title>WAPM - pngquant demo</title>
+<meta name="viewport" content="width=480">
+<script>
+document.documentElement.className += /Mac[ _]OS[ _]X/.test(navigator.userAgent) ? ' mac' : (/Windows[ _]NT/.test(navigator.userAgent) ? ' win' : '')
+</script>
+<style>
+    body {font: 0.95em/1.4 "Helvetica Neue", Arial, Helvetica, sans-serif;color:#222;background:#fff;
+    margin:0 auto; padding:2em 1em 1em; max-width:60em}
+    li {margin-bottom:0.25em}
+    h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+    h1 {font-size:3em;line-height:1;margin:0 0 0.5em;}
+    h2 {font-size:2em;margin-bottom:0.75em;}
+    h3 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+    h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+    h6 {font-size:1em;font-weight:bold;}
+
+    pre {margin:1.5em 0;padding:0.5em; white-space:pre-wrap; background:#ffc; border: 1px solid #dd8; display:table-cell}
+    pre, code {font:1em consolas, 'andale mono', 'lucida console', monospace, sans-serif;}
+    small {color:#888; font-weight: normal}
+    dt {margin:1em 0 0.5em;}
+    .minor {text-decoration: none}
+    .minor:hover, .focus {text-decoration: underline;}
+    #manual code.example {background:#f4f4f4; padding:2px 3px 1px 3px}
+    #manual dt code {background:#dfc; padding-right:4px}
+
+    pre code {background:none !important}
+    .logo {float:right; margin-left:2em; border:0;}
+    img {transition: background 0.25s ease-in-out;}
+    img:hover {background:#a4a;}
+    .changelog {padding:0 1px}
+    .nobr {white-space:nowrap}
+    .win li.win-only,
+    .mac li.mac-only {font-weight: bold;}
+    :target h2 {
+        transition: background 1s ease-in-out;
+        background: #eef;
+    }
+
+    .warning {color: #600;}
+    table {width:100%; margin: 1.5em 0 2em}
+    td { text-align: center;}
+    hr {border:none;border-top:1px solid #eee;}
+    td img {max-width: 100%; background: #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGElEQVR4AWP8xwABX6D0QAl8gjJ4BlYAAP2qF5G/BQUyAAAAAElFTkSuQmCC)}
+</style>
+<link rel=icon href=/favicon.ico>
+<h1>wapm+pngquant</h1>
+
+<p>This is a demo of using pngquant with wapm and deployed with Netlify ❤️</p>
+
+<table><tr>
+<td><img src="Ducati_side_shadow.png" width="288" height="163" alt="original"></td>
+<td><a href="vsphotoshop.html"><img src="Ducati_side_shadow-fs8.png" width="288" height="163" title="pngquant 199 -s1 Ducati_side_shadow.png + ImageOptim" alt="tiny png converted"></a></td></tr>
+<tr><td>Original PNG: <b>75,628</b> bytes</td>
+<td>(automatically optimized with wapm+pngquant): <b>21,896</b> bytes (<b>73%</b> smaller)</td></tr>
+</table>
+</section>
